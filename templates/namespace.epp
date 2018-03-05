@@ -122,7 +122,13 @@ namespace <%= $name %> {
   #   value.
 
 <%- $mailboxes.each |String $key, Hash $opts| { -%>
-  mailbox <%= $key %> {
+  <%- if $key =~ /.+ .+/ {
+    $mb = "\"${key}\""
+  } else {
+    $mb = $key
+  }
+  -%>
+  mailbox <%= $mb %> {
   <%- $opts.each |String $opt, String $val| { -%>
     <%= $opt %> = <%= $val %>
   <%- } -%>
