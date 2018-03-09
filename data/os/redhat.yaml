@@ -1,3 +1,6 @@
 ---
 dovecot::packages:
   - 'dovecot'
+
+dovecot::managesieved::packages:
+  - 'dovecot-pigeonhole'

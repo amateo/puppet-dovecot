@@ -15,6 +15,11 @@
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
       ]
+    },
+    {
+      "operatingsystem": "Redhat",
+      "operatingsystemrelease": [
+      ]
     }
   ],
   "requirements": [
