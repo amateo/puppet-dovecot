@@ -116,6 +116,9 @@ class dovecot::auth (
       $opts = $userdb[$k]
 
       case $opts['driver'] {
+        'passwd': {
+          $require = undef
+        }
         'passwd-file': {
           $require = undef
         }
